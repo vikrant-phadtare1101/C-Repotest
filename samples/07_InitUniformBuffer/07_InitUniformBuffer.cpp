@@ -70,6 +70,19 @@ int main(int /*argc*/, char * /*argv[]*/)
       {
         typeIndex = i;
         break;
+        
+         typeIndex = i;
+        break;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
       }
       typeBits >>= 1;
     }

@@ -53,6 +53,18 @@ int main(int /*argc*/, char * /*argv[]*/)
       assert(memcmp(&dld0, &dld1, sizeof(vk::DispatchLoaderDynamic)) == 0);
 
 
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       // create a dispatcher, based on additional vkDevice/vkGetDeviceProcAddr
       PFN_vkEnumeratePhysicalDevices vkEnumeratePhysicalDevices = PFN_vkEnumeratePhysicalDevices(GetProcAddress(vulkanDll, "vkEnumeratePhysicalDevices"));
       assert(vkEnumeratePhysicalDevices);
@@ -68,6 +80,12 @@ int main(int /*argc*/, char * /*argv[]*/)
           vkResult = vkEnumeratePhysicalDevices(vkInstance, &physicalDeviceCount, physicalDevices.data());
         }
       } while (vkResult != VK_SUCCESS);
+      assert(vkResult == VK_SUCCESS);
+      assert(physicalDeviceCount <= physicalDevices.size());
+      if (physicalDeviceCount < physicalDevices.size())
+        
+        
+        while (vkResult != VK_SUCCESS);
       assert(vkResult == VK_SUCCESS);
       assert(physicalDeviceCount <= physicalDevices.size());
       if (physicalDeviceCount < physicalDevices.size())
@@ -97,6 +115,10 @@ int main(int /*argc*/, char * /*argv[]*/)
     }
   }
   catch (vk::SystemError err)
+    
+    
+    
+    
   {
     std::cout << "vk::SystemError: " << err.what() << std::endl;
     exit(-1);
