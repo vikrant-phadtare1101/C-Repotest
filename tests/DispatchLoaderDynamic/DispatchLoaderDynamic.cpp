@@ -60,6 +60,38 @@ int main(int /*argc*/, char * /*argv[]*/)
       assert(memcmp(&dld0, &dld1, sizeof(vk::DispatchLoaderDynamic)) != 0);
       dld0.init(vkInstance, vkGetInstanceProcAddr);
       assert(memcmp(&dld0, &dld1, sizeof(vk::DispatchLoaderDynamic)) == 0);
+VkResult vkResult = vkCreateInstance(&vkInstanceCreateInfo, nullptr, &vkInstance);
+      assert(vkResult == VK_SUCCESS);
+
+
+
+
+
+   assert(memcmp(&dld0, &dld1, sizeof(vk::DispatchLoaderDynamic)) != 0);
+      dld0.init(vkInstance, vkGetInstanceProcAddr);
+      assert(memcmp(&dld0, &dld1, sizeof(vk::DispatchLoaderDynamic)) == 0);
+VkResult vkResult = vkCreateInstance(&vkInstanceCreateInfo, nullptr, &vkInstance);
+      assert(vkResult == VK_SUCCESS);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
       
