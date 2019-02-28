@@ -35,10 +35,19 @@ int main(int /*argc*/, char * /*argv[]*/)
       // create a dispatcher, based on vkInstance/vkGetInstanceProcAddr only
       PFN_vkCreateInstance vkCreateInstance = PFN_vkCreateInstance(GetProcAddress(vulkanDll, "vkCreateInstance"));
       assert(vkCreateInstance);
+      
+      
+      
+      
+      
+      
 
       VkInstanceCreateInfo vkInstanceCreateInfo = {};
       vkInstanceCreateInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
+      vkInstanceCreateInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
       VkInstance vkInstance;
+      VkResult vkResult = vkCreateInstance(&vkInstanceCreateInfo, nullptr, &vkInstance);
+      
       VkResult vkResult = vkCreateInstance(&vkInstanceCreateInfo, nullptr, &vkInstance);
       assert(vkResult == VK_SUCCESS);
 
