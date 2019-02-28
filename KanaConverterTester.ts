@@ -26,6 +26,14 @@ public abstract class KanaConverterTester
         } else {
             do_direct_php_testing = false;
         }
+        
+        String php_option_from_ant = System.getProperty("test_with_php");
+        if(php_option_from_ant != null
+        && php_option_from_ant.equals("yes")) {
+            do_direct_php_testing = true;
+        } else {
+            do_direct_php_testing = false;
+        }
 
         // Test instantiation
         KanaConverter kana_converter_object = new KanaConverter();
