@@ -32,6 +32,13 @@ static std::vector<char const*> getDeviceExtensions()
   extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
 
   return extensions;
+  
+  
+  std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;
 }
 
 static std::vector<char const*> getInstanceExtensions()
@@ -61,6 +68,79 @@ static std::vector<char const*> getInstanceExtensions()
   extensions.push_back(VK_EXT_ACQUIRE_XLIB_DISPLAY_EXTENSION_NAME);
 #endif
 
+  
+  
+  
+  
+  
+std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;std::vector<char const*> extensions;
+
+  extensions.push_back(VK_KHR_SWAPCHAIN_EXTENSION_NAME);
+
+  return extensions;  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   return extensions;
 }
 
